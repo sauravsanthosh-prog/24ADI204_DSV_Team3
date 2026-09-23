@@ -1,0 +1,26 @@
+{
+  "dataset_source": "https://www.kaggle.com/datasets/nikhilbhosle/employee-attrition-uncleaned-dataset",
+  "sha256": "827b58b28f2f3bcae9e3d04208f49b32931d8fe5db431b0fd8c3465d551ef0d7",
+  "raw_rows": 74610,
+  "raw_columns": 24,
+  "exact_duplicates_removed": 112,
+  "clean_rows": 74498,
+  "missing_cells_before": 4325,
+  "missing_cells_after": 0,
+  "left_count": 35370,
+  "left_share_pct": 47.47778463851379,
+  "flags": {
+    "Distance from Home Missing": 1897,
+    "Company Tenure (In Months) Missing": 2381,
+    "Early Start Flag": 17824,
+    "Tenure Definition Review": 66049,
+    "Income IQR Flag": 151
+  },
+  "scope": "Week 1-4 descriptive analysis only",
+  "thresholds": {
+    "min_group_n": 200,
+    "practical_difference_pp": 5,
+    "max_cleaning_swing_pp": 2
+  },
+  "uncertainty": "Intervals assume independent rows; sampling and company clusters unknown."
+}

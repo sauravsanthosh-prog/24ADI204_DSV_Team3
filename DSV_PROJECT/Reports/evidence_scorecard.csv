@@ -1,0 +1,8 @@
+contrast,exposed_n,reference_n,difference_pp,ci_low_pp,ci_high_pp,cleaning_swing_pp,all_roles_same_direction,status,reason,standardized_difference_pp,covered_population_pct,eligible_strata
+Overtime,24341,50157,5.964326286034144,5.199700350446566,6.728174567673364,0.190508434231079,True,Robust descriptive signal,Passed stated exploratory checks,5.8394505293849654,100.0,15
+Limited remote access,60300,14198,28.12273071418042,27.302991178867565,28.93036654490459,0.09831527431384401,True,Robust descriptive signal,Passed stated exploratory checks,28.035523925841378,100.0,15
+Poor or fair balance,32908,41590,19.535698742693974,18.825057134665105,20.243510346720957,0.4035083237269923,True,Robust descriptive signal,Passed stated exploratory checks,19.43954407546337,100.0,15
+Low satisfaction,7457,67041,5.894894934954981,4.699364826752028,7.087593924035194,0.46806073844412044,True,Robust descriptive signal,Passed stated exploratory checks,5.8308309759155295,100.0,15
+Low recognition,29620,44878,0.560885466394162,-0.17177678247508305,1.293691280679813,0.15458209590442085,False,Needs caution,interval crosses zero; role inconsistency; below practical threshold; adjusted effect or coverage,0.6546598726107189,100.0,15
+No promotions,37145,37353,3.5887251003698495,2.87178476631255,4.305146484583185,0.24878953130623138,True,Needs caution,below practical threshold; adjusted effect or coverage,3.5542908352413995,100.0,15
+Long commute (50+ recorded units),38548,35950,10.13481780856495,9.420464168296713,10.847654306557349,0.37043379385412933,True,Robust descriptive signal,Passed stated exploratory checks,10.044520945868626,100.0,15

@@ -1,0 +1,25 @@
+column,dtype,missing_count,missing_pct,unique_non_null,constant
+Employee ID,int64,0,0.0,74498,False
+Age,int64,0,0.0,42,False
+Gender,str,0,0.0,2,False
+Years at Company,int64,0,0.0,51,False
+Job Role,str,0,0.0,5,False
+Monthly Income,int64,0,0.0,9836,False
+Work-Life Balance,str,0,0.0,4,False
+Job Satisfaction,str,0,0.0,4,False
+Performance Rating,str,0,0.0,4,False
+Number of Promotions,int64,0,0.0,5,False
+Overtime,str,0,0.0,2,False
+Distance from Home,float64,1912,2.5626591609703793,99,False
+Education Level,str,0,0.0,5,False
+Marital Status,str,0,0.0,3,False
+Number of Dependents,int64,0,0.0,9,False
+Job Level,str,0,0.0,3,False
+Company Size,str,0,0.0,3,False
+Company Tenure (In Months),float64,2413,3.2341509181074923,127,False
+Remote Work,str,0,0.0,2,False
+Leadership Opportunities,str,0,0.0,2,False
+Innovation Opportunities,str,0,0.0,2,False
+Company Reputation,str,0,0.0,4,False
+Employee Recognition,str,0,0.0,4,False
+Attrition,str,0,0.0,2,False
