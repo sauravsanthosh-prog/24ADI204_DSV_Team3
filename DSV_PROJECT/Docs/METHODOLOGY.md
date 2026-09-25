@@ -3,7 +3,7 @@
 ## Reproducibility
 
 The original CSV is immutable. `Source_Code/attrition_lab.py` is the shared implementation
-used by all four notebooks. The manifest records its SHA-256 and derived counts. The notebooks
+used by the Week 1–4 audit notebooks. The manifest records its SHA-256 and derived counts. The notebooks
 contain their own loading cells, so no hidden execution order between weeks is required.
 The scatterplot sample uses seed 42; aggregate analyses use all eligible records.
 
@@ -76,3 +76,42 @@ an untouched evaluation set. EDA on this full dataset is not independent model e
 Newcombe, R. G. (1998). Interval estimation for the difference between independent proportions:
 comparison of eleven methods. *Statistics in Medicine*, 17, 873–890.
 [DOI](https://doi.org/10.1002/(SICI)1097-0258(19980430)17:8%3C873::AID-SIM779%3E3.0.CO;2-I).
+
+## Weeks 6–7: transformations and PCA
+
+advanced_analysis.py selects six numeric and fifteen categorical source fields. ID, both
+outcome representations, the ambiguous months-tenure field and audit flags are excluded.
+For numeric fields with absolute skew above 1 and more than two values, Yeo–Johnson is
+retained only if it reduces absolute skew. Income is the only selected transform in this
+run: skew 5.208 to 0.038. Numeric fields are then standardized. MinMax is a separate
+range-scaling comparison and does not claim to change skewness.
+
+All categories are one-hot encoded, dropping the first sorted reference per field. Ordinal
+labels are also one-hot encoded because equal spacing is not established. Dummies stay 0/1
+in the primary matrix. This weighting favors unit-variance numeric fields relative to
+individual dummy columns. An alternative fit standardizing every encoded column is reported.
+
+After constant and pairwise |Pearson r| > 0.90 screening, all 40 encoded columns remain.
+The fixed column order controls tie-breaking; the screen never consults Attrition. It does
+not prove the absence of higher-order multicollinearity. Full-SVD PCA is fitted on the full
+baseline for description. The minimum 24 components reaching 90% retain 90.10%; the first
+two retain 22.24%. All-column standardization needs 30 components for 90%. Reconstruction
+residuals independently verify retained variance. Component signs are arbitrary.
+
+Dataset/Processed stores a compressed feature matrix and 24 scores. IDs are separate
+row-alignment metadata; they are not PCA input columns. Outcome is attached only to the
+display coordinates. There is no attrition classifier or independent predictive evaluation.
+
+## Week 8: dashboard scope and sampling
+
+The six-chapter Streamlit dashboard labels full-cohort audit/evidence views explicitly.
+Explore-group role/age filters operate after each full-data cleaning scenario, and group
+rates/intervals use the resulting cohort. These filtered charts do not inherit the global
+evidence gate status. PCA filters select displayed records without refitting the basis.
+Scatterplots use fixed seeds and state their sample sizes; aggregate tables use all eligible
+records. Empty cohorts are handled. No ID is exposed in chart tooltips.
+
+Official references: [PowerTransformer](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PowerTransformer.html),
+[OneHotEncoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html),
+[PCA](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html),
+[Streamlit testing](https://docs.streamlit.io/develop/api-reference/app-testing).

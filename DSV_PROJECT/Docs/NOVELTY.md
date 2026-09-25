@@ -41,12 +41,13 @@ The baseline thresholds require 200 observations in each arm, an absolute gap of
 all roles/scenarios, a maximum 2-point cleaning swing, and an adjusted gap of at least
 5 points with at least 90% population coverage. Passing is not causal validation.
 
-## Later extension
+## Implemented dashboard extension (Week 8)
 
-A dashboard can let reviewers select an assumption and watch the claim and its evidence
-change together. Budget simulations or proposed interventions would need explicit assumptions
-and separate evidence about their effects. There are no invented savings or prevention claims
-in the Week 4 prototype.
+The dashboard lets reviewers select a cleaning scenario, role and age range and inspect
+recalculated cohort rates. A separate, clearly labelled full-cohort chapter presents the
+evidence gate, sensitivity lines and within-role results. PCA and weighting sensitivity
+extend the descriptive analysis. Budget simulations or proposed interventions would need
+separate evidence about their effects; no savings or prevention claims are invented.
 
 ## Suggested viva description
 
