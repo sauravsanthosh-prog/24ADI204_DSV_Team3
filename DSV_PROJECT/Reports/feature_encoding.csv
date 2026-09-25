@@ -1,0 +1,16 @@
+feature,categories,reference_category,output_columns
+Gender,Female | Male,Female,1
+Job Role,Education | Finance | Healthcare | Media | Technology,Education,4
+Work-Life Balance,Excellent | Fair | Good | Poor,Excellent,3
+Job Satisfaction,High | Low | Medium | Very High,High,3
+Performance Rating,Average | Below Average | High | Low,Average,3
+Overtime,No | Yes,No,1
+Education Level,Associate Degree | Bachelor's Degree | High School | Master's Degree | PhD,Associate Degree,4
+Marital Status,Divorced | Married | Single,Divorced,2
+Job Level,Entry | Mid | Senior,Entry,2
+Company Size,Large | Medium | Small,Large,2
+Remote Work,No | Yes,No,1
+Leadership Opportunities,No | Yes,No,1
+Innovation Opportunities,No | Yes,No,1
+Company Reputation,Excellent | Fair | Good | Poor,Excellent,3
+Employee Recognition,High | Low | Medium | Very High,High,3

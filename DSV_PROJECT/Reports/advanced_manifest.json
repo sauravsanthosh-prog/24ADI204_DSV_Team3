@@ -1,0 +1,19 @@
+{
+  "rows": 74498,
+  "input_original_features": 21,
+  "encoded_features": 40,
+  "selected_features": 40,
+  "correlation_threshold": 0.9,
+  "dropped_correlated_or_constant": 0,
+  "variance_target": 0.9,
+  "components_retained": 24,
+  "retained_variance": 0.9009976236126089,
+  "first_two_variance": 0.2223560870734126,
+  "all_columns_standardized_components_90": 30,
+  "all_columns_standardized_first_two_variance": 0.08506479277314798,
+  "raw_sha256": "827b58b28f2f3bcae9e3d04208f49b32931d8fe5db431b0fd8c3465d551ef0d7",
+  "fit_scope": "Full cleaned cohort; descriptive PCA only; no prediction evaluation",
+  "weighting": "Numeric z-scores + reference-dropped unscaled one-hot columns",
+  "target_in_features": false,
+  "identifier_in_features": false
+}

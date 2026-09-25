@@ -39,4 +39,17 @@ References: Overtime Yes vs No; Remote Work No vs Yes; balance Poor/Fair vs Good
 
 The dataset source is [Nikhil Bhosle on Kaggle](https://www.kaggle.com/datasets/nikhilbhosle/employee-attrition-uncleaned-dataset). Its sampling process, time period and original real/synthetic status remain unverified. Independence assumptions and exploratory comparisons limit interval interpretation. The evidence gate is a transparent project heuristic, not a validated decision rule.
 
-All four notebooks provide reproducible code, saved outputs and explanation. Read [Week 4](../Source_Code/Notebooks/04_Week4_EDA_Book.ipynb), [methods](../Docs/METHODOLOGY.md) and [novelty](../Docs/NOVELTY.md). No trained model, measured accuracy, Word log or revised presentation is part of this submission.
+The four original notebooks provide reproducible EDA code, outputs and explanations. Read [Week 4](../Source_Code/Notebooks/04_Week4_EDA_Book.ipynb), [methods](../Docs/METHODOLOGY.md) and [novelty](../Docs/NOVELTY.md).
+
+## Weeks 5–9 completion
+
+Nine executed notebooks now cover review preparation, transformations, PCA, dashboard and
+final submission. The income Yeo–Johnson transform reduces skew from 5.208 to 0.038.
+There are 40 encoded features; the pairwise correlation screen removes no further columns.
+PCA retains 90.10% of variance in 24 components, with 22.24% in the first two. Standardizing
+all encoded columns instead requires 30 components for 90%, showing weighting sensitivity.
+
+The Streamlit dashboard provides six narrative chapters and eight plot types. Fourteen
+automated tests passed. Project_Report.pdf and Final_Presentation.pptx cover the completed
+workflow. PCA is unsupervised; no attrition classifier or prediction accuracy is claimed.
+Weekly logs remain notebook Markdown. Human reviews and the actual expo/viva are team tasks.

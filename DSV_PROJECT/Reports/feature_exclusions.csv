@@ -1,0 +1,10 @@
+feature,reason
+Employee ID,"Identifier, no analytical distance meaning"
+Attrition,Outcome excluded from unsupervised fit
+Left,Derived outcome excluded
+Company Tenure (In Months),Definition conflicts with Years at Company; unresolved
+Distance from Home Missing,"Audit flag, kept outside primary PCA"
+Company Tenure (In Months) Missing,"Audit flag, kept outside primary PCA"
+Early Start Flag,"Audit assumption, kept outside primary PCA"
+Tenure Definition Review,"Audit assumption, kept outside primary PCA"
+Income IQR Flag,"Audit flag, kept outside primary PCA"
