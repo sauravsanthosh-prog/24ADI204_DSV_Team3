@@ -1,4 +1,4 @@
-# Milestone coverage, Team No. 4
+# Milestone coverage, Team No. 3
 
 | Week | Rulebook milestone | Delivered evidence |
 |---|---|---|

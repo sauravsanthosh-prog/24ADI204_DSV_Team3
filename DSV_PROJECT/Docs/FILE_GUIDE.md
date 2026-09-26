@@ -5,7 +5,7 @@
 | File or folder | Contents and use |
 |---|---|
 | Project_Report.pdf | Nine-page business insight report: source, cleaning, EDA, novelty, transformations, PCA, dashboard, actions and references. |
-| Final_Presentation.pptx | Completed course-template slides for Team 4; presenter notes explain limitations. |
+| Final_Presentation.pptx | Completed course-template slides for Team 3; presenter notes explain limitations. |
 | README.md | Installation, VS Code, regeneration and dashboard launch instructions. |
 | Start_Dashboard.ps1 | Windows shortcut to launch Streamlit using the project's .venv. |
 | requirements.txt | Direct package requirements with compatible bounds. |

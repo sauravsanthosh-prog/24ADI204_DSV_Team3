@@ -1,4 +1,4 @@
-# Team 4: six-minute demo and viva guide
+# Team 3: six-minute demo and viva guide
 
 ## Before the review
 
