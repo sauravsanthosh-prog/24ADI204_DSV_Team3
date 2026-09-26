@@ -7,7 +7,7 @@ import plotly.express as px
 import streamlit as st
 from attrition_lab import ROOT, NUMERIC, load_raw, clean_data, rate_table, scenarios, CONTRASTS
 
-st.set_page_config(page_title='Attrition Evidence Lab | Team 4',page_icon='📊',layout='wide')
+st.set_page_config(page_title='Attrition Evidence Lab | Team 3',page_icon='📊',layout='wide')
 COLOURS={'Stayed':'#147D92','Left':'#E57B55'}
 
 @st.cache_data
@@ -40,7 +40,7 @@ def filter_cohort(data,roles,age):
 def main():
     raw,base=dataset()
     st.sidebar.title('Evidence Lab')
-    st.sidebar.caption('Team 4 · 24ADI204 · Weeks 1–9')
+    st.sidebar.caption('Team 3 · 24ADI204 · Weeks 1–9')
     page=st.sidebar.radio('Story chapter',['Overview','Data audit','Explore groups','Evidence checks','PCA map','Next actions'],key='page')
     st.sidebar.divider()
     st.sidebar.caption('Source: Kaggle employee attrition uncleaned dataset. Observed sample shares; no individual risk scores.')

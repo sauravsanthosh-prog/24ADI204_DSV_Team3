@@ -44,7 +44,7 @@ def build():
         story.extend([im,Spacer(1,10)])
 
     heading(1,'Employee Attrition<br/>Evidence Lab')
-    p('Team No. 4 | 24ADI204 Data Science and Visualization<br/>Weeks 1-9 deliverables | 25 September 2026','HeadingLab')
+    p('Team No. 3 | 24ADI204 Data Science and Visualization<br/>Weeks 1-9 deliverables | 25 September 2026','HeadingLab')
     p('<b>Executive summary.</b> The project turns a messy employee dataset into an auditable visual story. It asks which observed workforce differences remain stable when cleaning assumptions and subgroup composition are examined. The deliverable combines reproducible notebooks, an evidence scorecard, feature transformations, PCA and a local interactive dashboard.')
     table([['Raw records','Cleaned records','Observed Left share'],['74,610','74,498','47.48%']], [163,163,164])
     p('<b>The main finding:</b> non-remote records have a 28.12 percentage-point higher observed Left share than remote records. Poor/fair work-life balance has a 19.54-point gap compared with good/excellent balance. Their directions persist across the specified cleaning and role checks. These results support further investigation; they do not quantify the effect of changing a policy.')
@@ -120,7 +120,7 @@ def build():
         ['Investigate working conditions','Use comparable roles and voluntary contextual feedback to understand remote/balance differences.'],
         ['Evaluate a policy pilot','Define outcomes and a comparison prospectively; measure the pilot instead of promising dataset gaps as effects.'],
         ['Present and defend','Run the six-chapter demo and explain cleaning, thresholds, PCA variance and limitations.']], [150,340])
-    p('<b>Team responsibilities:</b> Rohith Varma (25BAD090): data engineering; Saurav Santhosh (25BAD104): analysis; Sinan Ubaid (25BAD107): visualization; Nishanth (25BAD070): lead/storytelling. These are the team roles confirmed for Team No. 4. They do not claim a verified per-file authorship history.')
+    p('<b>Team responsibilities:</b> Rohith Varma (25BAD090): data engineering; Saurav Santhosh (25BAD104): analysis; Sinan Ubaid (25BAD107): visualization; Nishanth (25BAD070): lead/storytelling. These are the team roles confirmed for Team No. 3. They do not claim a verified per-file authorship history.')
     p('<b>Handover:</b> nine executed notebooks, raw/cleaned/processed data, analysis scripts, dashboard, chart and CSV reports, this report, a final presentation, a file guide and a viva/demo guide. The optional video is not included. Week 5 and Week 9 review materials are prepared; the team must attend and deliver the actual reviews.')
     p('<b>References and reproducibility</b>','HeadingLab')
     for s in [
@@ -128,15 +128,15 @@ def build():
         'Faculty-supplied DSV Rule Book, DATA-VIZ HACK-A-BIT 2026-2027, 24ADI204, pp. 1-5.',
         'Scikit-learn: <link href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PowerTransformer.html" color="#147D92">PowerTransformer</link>, <link href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html" color="#147D92">OneHotEncoder</link> and <link href="https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html" color="#147D92">PCA</link> documentation (accessed 25 September 2026).',
         'Streamlit: <link href="https://docs.streamlit.io/develop/api-reference/app-testing" color="#147D92">App testing documentation</link>. Newcombe (1998), Statistics in Medicine 17, 873-890; interval method details in Docs/METHODOLOGY.md.',
-        '<link href="https://github.com/sauravsanthosh-prog/24ADI204_DSV_Team3/tree/main/DSV_PROJECT" color="#147D92">Project repository</link>. The repository name remains Team3; current deliverables identify Team No. 4 as instructed.'
+        '<link href="https://github.com/sauravsanthosh-prog/24ADI204_DSV_Team3/tree/main/DSV_PROJECT" color="#147D92">Project repository</link>. Team 3 project source and weekly notebooks.'
     ]:p(s,'SmallLab')
     def footer(canvas,doc):
         canvas.saveState();canvas.setStrokeColor(TEAL);canvas.line(48,42,547,42)
         canvas.setFont('Helvetica',8);canvas.setFillColor(NAVY)
-        canvas.drawString(48,28,'TEAM 4 | EMPLOYEE ATTRITION EVIDENCE LAB')
+        canvas.drawString(48,28,'TEAM 3 | EMPLOYEE ATTRITION EVIDENCE LAB')
         canvas.drawRightString(547,28,f'{doc.page} / 9');canvas.restoreState()
     doc=SimpleDocTemplate(str(ROOT/'Project_Report.pdf'),pagesize=A4,leftMargin=48,rightMargin=48,topMargin=42,bottomMargin=57,
-        title='Employee Attrition Evidence Lab | Team 4',author='Team 4')
+        title='Employee Attrition Evidence Lab | Team 3',author='Team 3')
     doc.build(story,onFirstPage=footer,onLaterPages=footer)
     print(ROOT/'Project_Report.pdf')
 
