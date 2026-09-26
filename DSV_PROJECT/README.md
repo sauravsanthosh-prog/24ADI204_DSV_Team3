@@ -1,6 +1,6 @@
 # Employee Attrition Evidence Lab
 
-**24ADI204 · Data Science and Visualization · Team No. 4 · Weeks 1–9**
+**24ADI204 · Data Science and Visualization · Team No. 3 · Weeks 1–9**
 
 A reproducible workflow: source audit, cleaning, EDA, evidence checks, feature engineering,
 PCA and an interactive Streamlit dashboard. The original source CSV remains unchanged.
@@ -29,21 +29,21 @@ setup, Start_Dashboard.ps1 also launches the app. No cloud account is required.
 For notebooks, select **Select Kernel → Python Environments → .venv**, then **Run All**.
 All nine notebooks include executed outputs and explanatory Markdown.
 
-## Weekly notebooks
+## Weekly logs and notebooks
 
 | Week | Content |
 |---|---|
-| 1 | Project question, data source and Pandas/NumPy setup |
-| 2 | Structure, types, missingness and first-impression quality report |
-| 3 | Cleaning, imputation alternatives and outlier flags |
-| 4 | EDA book, distributions and evidence scorecard |
-| 5 | Consolidated data-audit review |
-| 6 | Feature exclusions, transformations, scaling and encoding |
-| 7 | Correlation screen, PCA variance, coefficients and weighting sensitivity |
-| 8 | Dashboard narrative, interaction rules and app checks |
-| 9 | Submission inventory, validation results and viva preparation |
+| [Week 1 log](Source_Code/Notebooks/01_Week1_Project_and_Data_Source.ipynb) | Project question, data source and Pandas/NumPy setup |
+| [Week 2 log](Source_Code/Notebooks/02_Week2_Know_Your_Data.ipynb) | Structure, types, missingness and first-impression quality report |
+| [Week 3 log](Source_Code/Notebooks/03_Week3_Cleaning_Sprint.ipynb) | Cleaning, imputation alternatives and outlier flags |
+| [Week 4 log](Source_Code/Notebooks/04_Week4_EDA_Book.ipynb) | EDA book, distributions and evidence scorecard |
+| [Week 5 log](Source_Code/Notebooks/05_Week5_Data_Audit_Review.ipynb) | Consolidated data-audit review |
+| [Week 6 log](Source_Code/Notebooks/06_Week6_Feature_Engineering.ipynb) | Feature exclusions, transformations, scaling and encoding |
+| [Week 7 log](Source_Code/Notebooks/07_Week7_Feature_Selection_and_PCA.ipynb) | Correlation screen, PCA variance, coefficients and weighting sensitivity |
+| [Week 8 log](Source_Code/Notebooks/08_Week8_Narrative_Dashboard.ipynb) | Dashboard narrative, interaction rules and app checks |
+| [Week 9 log](Source_Code/Notebooks/09_Week9_Final_Submission_and_Viva.ipynb) | Submission inventory, validation results and viva preparation |
 
-All are in Source_Code/Notebooks. Each locates the project with relative paths.
+Each weekly log is an executed notebook containing explanatory Markdown, code and results. Click a week above to open it directly on GitHub.
 
 ## Regenerate and validate
 
@@ -93,6 +93,4 @@ Code and materials cover Weeks 1–9. Human peer review, faculty presentation, e
 formal submission still require the team. The optional video is not included. Notebook
 Markdown serves as the weekly log; no Word logs were created.
 
-RAW/, WEEK 1/ and WEEK 2/ are preserved legacy IBM work, not current inputs. The repository
-retains its existing name 24ADI204_DSV_Team3; current material identifies **Team No. 4** as
-instructed. The project lives in DSV_PROJECT in that repository.
+RAW/, WEEK 1/ and WEEK 2/ contain legacy IBM work. The current Team 3 project and weekly logs are in DSV_PROJECT/Source_Code/Notebooks.
