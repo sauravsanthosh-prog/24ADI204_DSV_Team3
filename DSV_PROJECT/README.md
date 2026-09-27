@@ -7,6 +7,7 @@ PCA and an interactive Streamlit dashboard. The original source CSV remains unch
 
 ## Open these first
 
+- [Open the public interactive dashboard](https://team3-attrition-evidence-lab.amitas2102.chatgpt.site/): explore the project online without installing anything.
 - [Project_Report.pdf](Project_Report.pdf): nine-page business insight report.
 - [Final_Presentation.pptx](Final_Presentation.pptx): completed course-template slides.
 - [File guide](Docs/FILE_GUIDE.md): what each saved file contains.
